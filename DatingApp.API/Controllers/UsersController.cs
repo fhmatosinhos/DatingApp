@@ -16,9 +16,9 @@ namespace DatingApp.API.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        public readonly IDataRepository _repo;
+        public readonly IDataingRepository _repo;
         public readonly IMapper _mapper;
-        public UsersController(IDataRepository repo, IMapper mapper)
+        public UsersController(IDataingRepository repo, IMapper mapper)
         {
             _mapper = mapper;
             _repo = repo;
