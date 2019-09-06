@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.API.Data
 {
-    public class DatingRepository : IDataingRepository
+    public class DatingRepository : IDatingRepository
     {
         public readonly DataContext _context;
         public DatingRepository(DataContext context)
